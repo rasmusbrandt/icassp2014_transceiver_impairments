@@ -1,0 +1,76 @@
+% icassp2014_TxImpairments
+% Copyright (C) 2014, Rasmus Brandt
+
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+
+% You should have received a copy of the GNU General Public License along
+% with this program; if not, write to the Free Software Foundation, Inc.,
+% 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+load('sumrateKappas_run1');
+
+
+tmp = load('sumrateKappas_run2');
+
+bs_param1_sumrateKappas_maxrate_noimp = cat(5,bs_param1_sumrateKappas_maxrate_noimp,tmp.bs_param1_sumrateKappas_maxrate_noimp);
+bs_param2_sumrateKappas_maxrate_noimp = cat(5,bs_param2_sumrateKappas_maxrate_noimp,tmp.bs_param2_sumrateKappas_maxrate_noimp);
+bs_param3_sumrateKappas_maxrate_noimp = cat(5,bs_param3_sumrateKappas_maxrate_noimp,tmp.bs_param3_sumrateKappas_maxrate_noimp);
+
+bs_param1_sumrateKappas_maxrate_compensate = cat(5,bs_param1_sumrateKappas_maxrate_compensate,tmp.bs_param1_sumrateKappas_maxrate_compensate);
+bs_param2_sumrateKappas_maxrate_compensate = cat(5,bs_param2_sumrateKappas_maxrate_compensate,tmp.bs_param2_sumrateKappas_maxrate_compensate);
+bs_param3_sumrateKappas_maxrate_compensate = cat(5,bs_param3_sumrateKappas_maxrate_compensate,tmp.bs_param3_sumrateKappas_maxrate_compensate);
+
+bs_param1_sumrateKappas_maxrate_ignore_smart = cat(5,bs_param1_sumrateKappas_maxrate_ignore_smart,tmp.bs_param1_sumrateKappas_maxrate_ignore_smart);
+bs_param2_sumrateKappas_maxrate_ignore_smart = cat(5,bs_param2_sumrateKappas_maxrate_ignore_smart,tmp.bs_param2_sumrateKappas_maxrate_ignore_smart);
+bs_param3_sumrateKappas_maxrate_ignore_smart = cat(5,bs_param3_sumrateKappas_maxrate_ignore_smart,tmp.bs_param3_sumrateKappas_maxrate_ignore_smart);
+
+bs_param1_sumrateKappas_maxrate_ignore_oblivious = cat(5,bs_param1_sumrateKappas_maxrate_ignore_oblivious,tmp.bs_param1_sumrateKappas_maxrate_ignore_oblivious);
+bs_param2_sumrateKappas_maxrate_ignore_oblivious = cat(5,bs_param2_sumrateKappas_maxrate_ignore_oblivious,tmp.bs_param2_sumrateKappas_maxrate_ignore_oblivious);
+bs_param3_sumrateKappas_maxrate_ignore_oblivious = cat(5,bs_param3_sumrateKappas_maxrate_ignore_oblivious,tmp.bs_param3_sumrateKappas_maxrate_ignore_oblivious);
+
+
+bs_param1_sumrateKappas_maxsinr_noimp = cat(5,bs_param1_sumrateKappas_maxsinr_noimp,tmp.bs_param1_sumrateKappas_maxsinr_noimp);
+bs_param2_sumrateKappas_maxsinr_noimp = cat(5,bs_param2_sumrateKappas_maxsinr_noimp,tmp.bs_param2_sumrateKappas_maxsinr_noimp);
+bs_param3_sumrateKappas_maxsinr_noimp = cat(5,bs_param3_sumrateKappas_maxsinr_noimp,tmp.bs_param3_sumrateKappas_maxsinr_noimp);
+
+bs_param1_sumrateKappas_maxsinr_compensate = cat(5,bs_param1_sumrateKappas_maxsinr_compensate,tmp.bs_param1_sumrateKappas_maxsinr_compensate);
+bs_param2_sumrateKappas_maxsinr_compensate = cat(5,bs_param2_sumrateKappas_maxsinr_compensate,tmp.bs_param2_sumrateKappas_maxsinr_compensate);
+bs_param3_sumrateKappas_maxsinr_compensate = cat(5,bs_param3_sumrateKappas_maxsinr_compensate,tmp.bs_param3_sumrateKappas_maxsinr_compensate);
+
+bs_param1_sumrateKappas_maxsinr_ignore_smart = cat(5,bs_param1_sumrateKappas_maxsinr_ignore_smart,tmp.bs_param1_sumrateKappas_maxsinr_ignore_smart);
+bs_param2_sumrateKappas_maxsinr_ignore_smart = cat(5,bs_param2_sumrateKappas_maxsinr_ignore_smart,tmp.bs_param2_sumrateKappas_maxsinr_ignore_smart);
+bs_param3_sumrateKappas_maxsinr_ignore_smart = cat(5,bs_param3_sumrateKappas_maxsinr_ignore_smart,tmp.bs_param3_sumrateKappas_maxsinr_ignore_smart);
+
+bs_param1_sumrateKappas_maxsinr_ignore_oblivious = cat(5,bs_param1_sumrateKappas_maxsinr_ignore_oblivious,tmp.bs_param1_sumrateKappas_maxsinr_ignore_oblivious);
+bs_param2_sumrateKappas_maxsinr_ignore_oblivious = cat(5,bs_param2_sumrateKappas_maxsinr_ignore_oblivious,tmp.bs_param2_sumrateKappas_maxsinr_ignore_oblivious);
+bs_param3_sumrateKappas_maxsinr_ignore_oblivious = cat(5,bs_param3_sumrateKappas_maxsinr_ignore_oblivious,tmp.bs_param3_sumrateKappas_maxsinr_ignore_oblivious);
+
+
+bs_param1_sumrateKappas_tdma_noimp = cat(5,bs_param1_sumrateKappas_tdma_noimp,tmp.bs_param1_sumrateKappas_tdma_noimp);
+bs_param2_sumrateKappas_tdma_noimp = cat(5,bs_param2_sumrateKappas_tdma_noimp,tmp.bs_param2_sumrateKappas_tdma_noimp);
+bs_param3_sumrateKappas_tdma_noimp = cat(5,bs_param3_sumrateKappas_tdma_noimp,tmp.bs_param3_sumrateKappas_tdma_noimp);
+
+bs_param1_sumrateKappas_tdma_compensate = cat(5,bs_param1_sumrateKappas_tdma_compensate,tmp.bs_param1_sumrateKappas_tdma_compensate);
+bs_param2_sumrateKappas_tdma_compensate = cat(5,bs_param2_sumrateKappas_tdma_compensate,tmp.bs_param2_sumrateKappas_tdma_compensate);
+bs_param3_sumrateKappas_tdma_compensate = cat(5,bs_param3_sumrateKappas_tdma_compensate,tmp.bs_param3_sumrateKappas_tdma_compensate);
+
+bs_param1_sumrateKappas_tdma_ignore = cat(5,bs_param1_sumrateKappas_tdma_ignore,tmp.bs_param1_sumrateKappas_tdma_ignore);
+bs_param2_sumrateKappas_tdma_ignore = cat(5,bs_param2_sumrateKappas_tdma_ignore,tmp.bs_param2_sumrateKappas_tdma_ignore);
+bs_param3_sumrateKappas_tdma_ignore = cat(5,bs_param3_sumrateKappas_tdma_ignore,tmp.bs_param3_sumrateKappas_tdma_ignore);
+
+
+clear tmp;
+
+
+Nnetworks = 100;
+
+
+save sumrateKappas_merged;
