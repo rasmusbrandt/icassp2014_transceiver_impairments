@@ -77,7 +77,7 @@ use this code for research that results in publications, please cite our
 original article. The following [Bibtex][bibtex] entry can be used.
 ```
 @article{Brandt2014accepted, 
-  author = {R. Brandt and E. Björnson and M. Bengtsson}, 
+  author = {R. Brandt and E. Bj{\"o}rnson and M. Bengtsson}, 
   title = {Weighted Sum Rate Optimization for Multicell {MIMO} Systems with Hardware-Impaired Transceivers}, 
   journal = {IEEE Conf. Acoust., Speech, and Signal Process. (ICASSP'14)}, 
   year = 2014,
