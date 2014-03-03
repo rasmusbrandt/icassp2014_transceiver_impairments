@@ -2,7 +2,7 @@ icassp2014_TxImpairments
 ====
 
 **icassp2014_TxImpairments** is the simulation environment for
-> [R. Brandt][rabr5411], [E. Björnson][emilbjo], and [M. Bengtsson][matben]. Weighted sum rate optimization for multicell MIMO systems with hardware-impaired transceivers. IEEE Conf. Acoust., Speech, and Signal Process. (ICASSP’14), 2014. Accepted.
+> [R. Brandt][rabr5411], [E. Björnson][emilbjo], and [M. Bengtsson][matben]. [Weighted sum rate optimization for multicell MIMO systems with hardware-impaired transceivers][icassp2014_diva]. IEEE Conf. Acoust., Speech, and Signal Process. (ICASSP’14), 2014. Accepted.
 
 It provides all the simulation code and scripts required to reproduce the 
 figures from the paper.
@@ -88,6 +88,7 @@ original article. The following [Bibtex][bibtex] entry can be used.
 [rabr5411]: http://www.kth.se/profile/rabr5411
 [emilbjo]: http://www.kth.se/profile/emilbjo
 [matben]: http://www.kth.se/profile/matben
+[icassp2014_diva]: http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-141944
 [yalmip]: http://users.isy.liu.se/johanl/yalmip
 [gurobi]: http://www.gurobi.com/
 [sedumi]: https://github.com/sqlp/sedumi
