@@ -1,7 +1,7 @@
-icassp2014_TxImpairments
+icassp2014_transceiver_impairments
 ====
 
-**icassp2014_TxImpairments** is the simulation environment for
+**icassp2014_transceiver_impairments** is the simulation environment for
 > [R. Brandt][rabr5411], [E. Björnson][emilbjo], and [M. Bengtsson][matben], "[Weighted sum rate optimization for multicell MIMO systems with hardware-impaired transceivers][icassp2014_diva]", in _Proc. IEEE Conf. Acoust., Speech, and Signal Process. (ICASSP’14)_, 2014, pp. 479-483.
 
 It provides all the simulation code and scripts required to reproduce the 
