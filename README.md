@@ -7,6 +7,8 @@ icassp2014_transceiver_impairments
 It provides all the simulation code and scripts required to reproduce the 
 figures from the paper.
 
+[![DOI](https://zenodo.org/badge/6698/rasmusbrandt/icassp2014_transceiver_impairments.svg)](http://dx.doi.org/10.5281/zenodo.15547)
+
 ## Abstract
 Physical transceivers exhibit distortions from hardware impairments, of which
 traces remain even after compensation and calibration. Multicell MIMO
